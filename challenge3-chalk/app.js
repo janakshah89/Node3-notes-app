@@ -1,0 +1,12 @@
+const data = require('./notes.js')
+const chalk = require('chalk')
+
+console.log('this is green : ' + chalk.green(data()))
+console.log('this is bold & yellow : ' + chalk.yellow.bold(data()))
+console.log('this is pink & strike: ' + chalk.strikethrough(data()))
+console.log('this is white - inverse : ' + chalk.white.inverse(data()))
+console.log('this is red : ' + chalk.red(data()))
+console.log('this is hidden : ' + chalk.hidden(data()))
+console.log('this is dim : ' + chalk.dim(data()))
+console.log('this is bgBlueBright : ' + chalk.bgBlueBright(data()))
+console.log('this is bgGreen : ' + chalk.bgGreen.red.inverse(data()))
